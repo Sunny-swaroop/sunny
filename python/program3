@@ -1,0 +1,95 @@
+"""#append function
+l=["yellow","sunny","black",2,3,4]
+print(l)
+print(type(l))
+l.append("white")
+print(l)
+#insert function
+print(l)
+print(type(l))
+l.insert(2,"red")
+print(l)
+l2=[5,6,7,8]
+print(l2)
+print(type(l2))
+l.extend(l2)
+print(l)
+l.remove(2)
+print(l)
+l.pop(5)
+print(l)
+l.pop(4)
+print(l)
+print(l)
+print(type(l))
+l.clear()
+print(l)
+print(type(l))"""
+l3=["sunny","hyderabad","raaga"]
+print(l3)
+print(type(l3))
+print(l3.index("sunny"))
+print(l3.count("hyderabad"))
+l3.sort()
+print(l3)
+l3.reverse()
+print(l3)
+l4=l3.copy()
+print(l4)
+"""
+list1=[("name","sunny"),("city","rajampeta")]
+print(dict(list1))
+x=int(input("enter the number:"))
+if x>0:
+    print(x,"is positive")
+else:
+    print(x,"is negative")
+n=int(input("enter the number:"))
+if n%2==0:
+    print(n,"is an even number")
+else:
+    print(n,"is an odd number")
+n=int(input("enter the year"))
+if n%4==0:
+    print(n,"this is an leap year")
+else:
+    print(n,"this is not a leap year")
+x=int(input("enter the value of x:"))
+y=int(input("enter the value of y:"))
+z=int(input("enter the value of z:"))
+if x>y and x>z:
+    m=x
+elif y>z:
+    m=y
+else:
+    m=z
+print("{}{}{}max of three numbers is {}".format(x,y,z,m))"""
+"""
+m=int(input("enter the maths marks:"))
+p=int(input("enter the physics marks:"))
+c=int(input("enter the chemistry marks:"))
+if m<35 or p<35 or c<35:
+    result="fail"
+    print("result=",result)
+else:
+    result="pass"
+    total=m+p+c
+    print("total=",total)
+    avg=total/3
+    print("avg=",avg)
+    if avg>=60:
+        grade="first class"
+        print("grade=",grade)
+    elif avg>=40:
+        grade="second class"
+        print("grade=",grade)
+    else:
+        grade="third class"
+        print("grade=",grade)
+    
+ """   
+
+
+
+
+
