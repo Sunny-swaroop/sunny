@@ -1,0 +1,110 @@
+[200~#example for function
+"""
+def add(x,y):
+        s=x+y
+        return(s)
+def sub(x,y):
+        s=x-y
+        return(s)
+def mul(x,y):
+        s=x*y
+        return(s)
+def div(x,y):
+        s=x/y
+        return(s)
+x=int(input("enter a x value :"))
+y=int(input("enter a y value :"))
+a=print("a.Addition")
+b=print("b.subtraction")
+c=print("c.multiplication")
+d=print("d.division")
+s=input("choose your option:")
+if s=='a':
+    s=add(x,y)
+    print(f"the addition of {x} and {y} is {s}")
+elif s=='b':
+    s=sub(x,y)
+    print(f"the subtraction of {x} and {y} is {s}")
+elif s=='c':
+    s=mul(x,y)
+    print(f"the multiplication of {x} and {y} is {s}")
+else:
+     s=div(x,y)
+    print(f"the division of {x} and {y} is {s}") 
+"""
+
+
+"""
+#variable length functions
+def add(*args):
+    s=0
+    for i in args:
+        s=s+i
+    return s
+result=add(2,300)
+print("result=",result)
+"""
+
+"""
+#keyword arguments
+def greeting(name,msg):
+    print(f"hi {name},{msg}")
+greeting(msg="good morning",name="sunny")
+"""
+
+"""
+#variable of keyword arguments
+def greeting(**args):
+    for i in args.keys():
+        print(i,args[i],end="\t")
+greeting(name="sunny",rollnum=1234)       
+"""
+
+"""
+#default arguments
+def greeting(name,msg="good morning"):
+    print(f"{name},{msg}")
+greeting("sunny")
+"""
+"""
+#square of a number
+def square(n):
+    print("square of a n is :",n*n)
+square(3)
+square(5)
+square(7)
+"""
+"""
+#recursion function
+def fact(x):
+    if x==0:
+        return 1
+    else:
+        return(x*fact(x-1))
+result=fact(6)
+print(result)
+
+
+#power function using recursion
+def power(x,n):
+    if n==0:
+        return 1
+    else:
+        return(x*power(x,n-1))
+result1=power(7,2)
+print(result1)
+"""
+
+
+#fibanancii series
+def fib(n):
+    if n==0:
+        return 0
+    elif n==1:
+        return 1
+    else:
+        return(fib(n-1)+fib(n-2))
+for i in range(10):
+    k=fib(i)
+    print(k,end="\t")
+
