@@ -8,6 +8,7 @@ for i in range(1,a+1):
 print(l)
 t=list(map(lambda x:x*2 ,l))
 print(t)
-
+print(t)
+print(t)
             
 
