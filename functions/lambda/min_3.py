@@ -5,4 +5,5 @@ x=int(input("enter a x number :"))
 y=int(input("enter a y number :"))
 z=int(input("enter a z number :"))
 print(t(x,y,z))
+print(t(x))
 
