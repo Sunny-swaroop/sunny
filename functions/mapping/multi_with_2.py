@@ -10,5 +10,5 @@ t=list(map(lambda x:x*2 ,l))
 print(t)
 print(t)
 print(t)
-            
+print (t)  
 
